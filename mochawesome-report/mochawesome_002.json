@@ -1,0 +1,142 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-31T08:11:04.917Z",
+    "end": "2022-07-31T08:11:05.493Z",
+    "duration": 576,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "aadd600a-cd17-47a2-800e-09c0c6908101",
+      "title": "",
+      "fullFile": "cypress/integration/reqres/getUser.feature",
+      "file": "cypress/integration/reqres/getUser.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fb68c9d1-73a5-46fe-b688-a9a4db153a56",
+          "title": "validate get request",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "perform api test to fetch list of users",
+              "fullTitle": "validate get request perform api test to fetch list of users",
+              "timedOut": null,
+              "duration": 228,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "16709361-2e24-4cf6-bd6f-cf6480527437",
+              "parentUUID": "fb68c9d1-73a5-46fe-b688-a9a4db153a56",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "perform api test to fetch for single user only (example #1)",
+              "fullTitle": "validate get request perform api test to fetch for single user only (example #1)",
+              "timedOut": null,
+              "duration": 168,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "9f674199-15b2-49b5-8fc5-b4033d0ccd96",
+              "parentUUID": "fb68c9d1-73a5-46fe-b688-a9a4db153a56",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "perform api test to verify correct reponse 404 when user not found (example #1)",
+              "fullTitle": "validate get request perform api test to verify correct reponse 404 when user not found (example #1)",
+              "timedOut": null,
+              "duration": 150,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "c5696319-efa5-4565-91f7-e63180f5a4c4",
+              "parentUUID": "fb68c9d1-73a5-46fe-b688-a9a4db153a56",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "16709361-2e24-4cf6-bd6f-cf6480527437",
+            "9f674199-15b2-49b5-8fc5-b4033d0ccd96",
+            "c5696319-efa5-4565-91f7-e63180f5a4c4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 546,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

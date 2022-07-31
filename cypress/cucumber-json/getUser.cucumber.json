@@ -1,0 +1,139 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "validate get request",
+    "line": 1,
+    "id": "validate-get-request",
+    "tags": [],
+    "uri": "getUser.feature",
+    "elements": [
+      {
+        "id": "validate-get-request;perform-api-test-to-fetch-list-of-users",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "perform api test to fetch list of users",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I access api request end point to get users",
+            "result": {
+              "status": "passed",
+              "duration": 232000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "firstname",
+                      "lastname",
+                      "avatar"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "michael.lawson@reqres.in",
+                      "Michael",
+                      "Lawson",
+                      "https://reqres.in/img/faces/7-image.jpg"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "lindsay.ferguson@reqres.in",
+                      "Lindsay",
+                      "Ferguson",
+                      "https://reqres.in/img/faces/8-image.jpg"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "tobias.funke@reqres.in",
+                      "Tobias",
+                      "Funke",
+                      "https://reqres.in/img/faces/9-image.jpg"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Verify below response for the user",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-get-request;perform-api-test-to-fetch-for-single-user-only",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "perform api test to fetch for single user only",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I access api request end point to get '2' single user only",
+            "result": {
+              "status": "passed",
+              "duration": 164000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Verify the response like id email firstname lastname from fixture",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-get-request;perform-api-test-to-verify-correct-reponse-404-when-user-not-found",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "perform api test to verify correct reponse 404 when user not found",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I access api request end point to get '23' single user only",
+            "result": {
+              "status": "passed",
+              "duration": 153000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Verify the reponse is 404",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

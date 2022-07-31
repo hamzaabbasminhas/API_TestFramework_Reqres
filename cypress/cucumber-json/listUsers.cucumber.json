@@ -1,0 +1,79 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "validate for all user",
+    "line": 1,
+    "id": "validate-for-all-user",
+    "tags": [],
+    "uri": "listUsers.feature",
+    "elements": [
+      {
+        "id": "validate-for-all-user;to-access-reqres.in-and-perform-basic-api-test-to-fetch-users",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "to access reqres.in and perform basic api test to fetch users",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I access api request end point to get users",
+            "result": {
+              "status": "passed",
+              "duration": 167000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "firstname",
+                      "lastname",
+                      "avatar"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "michael.lawson@reqres.in",
+                      "Michael",
+                      "Lawson",
+                      "https://reqres.in/img/faces/7-image.jpg"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "lindsay.ferguson@reqres.in",
+                      "Lindsay",
+                      "Ferguson",
+                      "https://reqres.in/img/faces/8-image.jpg"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "tobias.funke@reqres.in",
+                      "Tobias",
+                      "Funke",
+                      "https://reqres.in/img/faces/9-image.jpg"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Verify below response for the user",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "validate delete request",
+    "line": 1,
+    "id": "validate-delete-request",
+    "tags": [],
+    "uri": "deleteUser.feature",
+    "elements": [
+      {
+        "id": "validate-delete-request;perform-api-test-to-delete-user",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "perform api test to delete user",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I access api request end point to deleter user '2'",
+            "result": {
+              "status": "passed",
+              "duration": 672000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Verify the reponse",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "validate update request",
+    "line": 1,
+    "id": "validate-update-request",
+    "tags": [],
+    "uri": "updateUser.feature",
+    "elements": [
+      {
+        "id": "validate-update-request;perform-api-test-to-update-user",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Perform api test to update User",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I access api request end point to update user with 'morpheus' and 'zion resident'",
+            "result": {
+              "status": "passed",
+              "duration": 720000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Verify reponse to be equal to sent request having 'morpheus' and 'zion resident'",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
