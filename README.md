@@ -51,9 +51,9 @@ and sample reports looks like this
 
 How to run scripts:
 
-Clone the repo and Install the project dependencies
+Clone the repo and Install the project dependencies (npm install)
 
-To run the tests on your terminal, run npm run runAll
+To run the tests on your terminal, 'npm run runAll'
 
 To view the mochawesome report: open output.html file inside a browser
 
