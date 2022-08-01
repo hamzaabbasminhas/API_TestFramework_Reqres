@@ -1,6 +1,6 @@
 # Cypress API framework - testing with api for https://reqres.in
 
-https://reqres.in is a demo website where people can try out the API test. In this project, I have created test cases that would get the user list, post the users, delete the users and validate all response via Cypress tool, and used to test e2e use cases for the same. This will run test in CircleCI and also creates simple mochawesome report.
+https://reqres.in is a demo website where people can try out the API test. In this project, I have created test cases that would get the user list, post the users, delete the users and validate all response via Cypress tool, and used to test e2e use cases for the same. This will run test and also creates simple mochawesome report.
 
 Use Cases:
 
@@ -28,7 +28,7 @@ Feature: validate create request
         | name     |  jobs |
         | morpheus | leader|
         
-All step defintion files are included inside their respective folders
+All step defintion files are included inside their respective folders with the same names as their feature files
 
 Fixtures
 
