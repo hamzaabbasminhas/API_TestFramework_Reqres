@@ -2,7 +2,7 @@
 
 https://reqres.in is a demo website where people can try out the API test. In this project, I have created test cases that would get the user list, post the users, delete the users and validate all response via Cypress tool, and used to test e2e use cases for the same. This will run test and also creates simple mochawesome report.
 
-Use Cases:
+## Use Cases:
 
 - Create Users
 
@@ -13,7 +13,7 @@ Use Cases:
 - Delete Users
 
 
-Folder Structure
+## Folder Structure
 Integartion/Reqres
 this contains all the feature files createUser and Delete users 
 
@@ -30,7 +30,7 @@ Feature: validate create request
         
 All step defintion files are included inside their respective folders with the same names as their feature files
 
-Fixtures
+## Fixtures
 
 This folder contains all the test data for our test like user_data.json that looks something like this 
 
@@ -41,7 +41,7 @@ This folder contains all the test data for our test like user_data.json that loo
     "last_name": "Weaver"
  }
  
-Mochawesome Report
+## Mochawesome Report
 marge (mochawesome-report-generator) is the counterpart to mochawesome, a custom reporter for use with the Javascript testing framework, mocha. Marge takes the JSON 	
 output from mochawesome and generates a full fledged HTML/CSS report that helps visualize your test suites.
 
@@ -49,14 +49,22 @@ Output files are generated output.html file under mochawesome-report folder,
 and sample reports looks like this
 
 
-How to run scripts:
+## How to run scripts:
 
-Clone the repo and Install the project dependencies (npm install)
+- Clone the repo and Install the project dependencies 
 
-To run the tests on your terminal, 'npm run runAll'
+```console
+npm install
+```
 
-To view the mochawesome report: open output.html file inside a browser
+- To run the tests on your terminal:
 
-To view execution video: go inside cypress/videos
+```console
+'npm run runAll'
+```
+
+- To view the mochawesome report: open output.html file inside a browser
+
+- To view execution video: go inside cypress/videos
 
 
